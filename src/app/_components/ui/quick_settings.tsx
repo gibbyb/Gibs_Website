@@ -1,5 +1,5 @@
 import { Button } from "~/components/ui/button";
-import { SignInGH } from "~/app/_components/auth/sign_in_gh";
+import { SignInQuick } from "~/app/_components/ui/sign_in_quick_settings";
 import { CiPower } from "react-icons/ci";
 import { AiFillSound } from "react-icons/ai";
 import { FaNetworkWired } from "react-icons/fa";
@@ -31,8 +31,8 @@ export function Quick_Settings() {
             <DropdownMenuItem className="rounded-full bg-gray-800 mr-10 ml-2">
               <IoIosSettings className="w-8 h-8" />
             </DropdownMenuItem>
-            <DropdownMenuItem className="rounded-full bg-gray-800 w-20 h-20 justify-center">
-              <SignInGH />
+            <DropdownMenuItem className="rounded-full bg-gray-800 ml-2">
+              < SignInQuick />
             </DropdownMenuItem>
           </div>
         </div>
