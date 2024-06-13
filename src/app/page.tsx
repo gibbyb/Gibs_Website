@@ -6,8 +6,8 @@ export default async function HomePage() {
   const session = await auth();
   if (!session) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-none text-white">
-        <h1 className="flex flex-col text-white text-5xl pb-10 text-center">
+      <main className="flex flex-col bg-none text-white w-full h-1/2 items-center my-auto">
+        <h1 className="flex flex-col text-white text-6xl pb-10 text-center">
         <div className="py-4">
           {new Date().toDateString()}
         </div>
@@ -20,7 +20,7 @@ export default async function HomePage() {
     );
   } else {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-none text-white">
+      <main className="flex min-h-screen flex-col bg-none text-white">
       </main>
     );
   }
